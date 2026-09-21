@@ -3,137 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity-2 Dashboard</title>
+    <title>Portfolio - BSIT-3B_Ramirez</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-        }
-
-        body {
-            background-color: #f0f4f8;
-            color: #1e293b;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .dashboard-header {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 25px 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .dashboard-header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 5px;
-        }
-
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .dashboard-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.2s ease;
-        }
-
-        .dashboard-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .dashboard-card h3 {
-            color: #475569;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .card-value {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #2563eb;
-            margin-bottom: 8px;
-        }
-
-        .status-online {
-            color: #16a34a !important;
-        }
-
-        .card-desc {
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #94a3b8;
-            font-size: 0.85rem;
-        }
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.7; }
+        nav { background: #f5f5f5; padding: 15px; margin-bottom: 25px; border-radius: 6px; }
+        nav a { margin-right: 18px; text-decoration: none; color: #2c3e50; font-weight: bold; }
+        nav a:hover { color: #3498db; }
+        section { margin-bottom: 40px; padding: 20px; border-bottom: 1px solid #ddd; }
+        h1, h2 { color: #2c3e50; }
     </style>
 </head>
 <body>
 
-    <header class="dashboard-header">
-        <h1>📊 Activity-2 Dashboard</h1>
-        <p id="current-time">Loading time...</p>
-    </header>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#education">Educational Background</a>
+    </nav>
 
-    <div class="dashboard-grid">
-        
-        <div class="dashboard-card">
-            <h3>Active Projects</h3>
-            <div class="card-value">3 Branch</div>
-            <p class="card-desc"> 09/12/26 to 09/19/26 </p>
-        </div>
+    <section id="profile">
+        <h1>Profile</h1>
+        <!-- Paste your Profile.html content below this line -->
 
-        
-        <div class="dashboard-card">
-            <h3>Tasks Completed</h3>
-            <div class="card-value">DATE: 09/18/26</div>
-            <p class="card-desc">This week</p>
-        </div>
+        <!-- Paste your Profile.html content above this line -->
+    </section>
 
-        
-        <div class="dashboard-card">
-            <h3>System Status</h3>
-            <div class="card-value status-online">Online</div>
-            <p class="card-desc">All services running</p>
-        </div>
-    </div>
+    <section id="education">
+        <h2>Educational Background</h2>
+        <!-- Paste your educational-background.html content below this line -->
 
-    <footer>
-        Dashboard BSIT3B on <span id="today-date"></span>
-    </footer>
-
-    <script>
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('current-time').textContent = 
-                now.toLocaleString('en-US', {
-                    weekday: 'long',
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                });
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
-
-        document.getElementById('today-date').textContent = new Date().toLocaleDateString();
-    </script>
+        <!-- Paste your educational-background.html content above this line -->
+    </section>
 
 </body>
 </html>
